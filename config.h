@@ -158,7 +158,7 @@ static Key keys[] = {
 	/* { MODKEY|ShiftMask,		XK_Tab,		spawn,		SHCMD("") }, */
 	{ MODKEY,			XK_q,		killclient,	{0} },
 	{ MODKEY|ShiftMask,		XK_q,		spawn,		SHCMD("sysact") },
-	{ MODKEY,			XK_w,		spawn,		SHCMD("$BROWSER") },
+	{ MODKEY,			XK_w,		spawn,		SHCMD("/usr/bin/opera") },
 	{ MODKEY|ShiftMask,		XK_w,		spawn,		SHCMD(TERMINAL " -e doas nmtui") },
 	{ MODKEY,			XK_e,		spawn,		SHCMD(TERMINAL " -e neomutt ; pkill -RTMIN+12 dwmblocks; rmdir ~/.abook") },
 	{ MODKEY|ShiftMask,		XK_e,		spawn,		SHCMD(TERMINAL " -e abook -C ~/.config/abook/abookrc --datafile ~/.config/abook/addressbook") },
@@ -270,7 +270,7 @@ static Key keys[] = {
 	{ 0, XF86XK_PowerOff,		spawn,		SHCMD("sysact") },
 	{ 0, XF86XK_Calculator,		spawn,		SHCMD(TERMINAL " -e bc -l") },
 	{ 0, XF86XK_Sleep,		spawn,		SHCMD("doas -A zzz") },
-	{ 0, XF86XK_WWW,		spawn,		SHCMD("$BROWSER") },
+	{ 0, XF86XK_WWW,		spawn,		SHCMD("/usr/bin/chromium-browser") },
 	{ 0, XF86XK_DOS,		spawn,		SHCMD(TERMINAL) },
 	/* { 0, XF86XK_ScreenSaver,	spawn,		SHCMD("") }, */
 	{ 0, XF86XK_TaskPane,		spawn,		SHCMD(TERMINAL " -e htop") },
